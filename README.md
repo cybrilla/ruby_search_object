@@ -2,6 +2,8 @@
 
 This gem provides a layout for implementation of search on activerecord / sequel or any other ORM based models. What this gem does is it creates and instace of the search handler class for the model and invokes the search method on that class.
 
+[![Gem Version](https://badge.fury.io/rb/ruby_search_object.svg)](http://badge.fury.io/rb/ruby_search_object)
+
 ## Installation
 
 Add this line to your application's Gemfile:
