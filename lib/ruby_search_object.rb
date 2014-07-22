@@ -1,7 +1,7 @@
 require "ruby_search_object/version"
 
 module RubySearchObject
-  module Helpers
+  module ClassMethods
     def search(params = {})
       search_handler(params).search
     end
@@ -13,5 +13,9 @@ module RubySearchObject
     def search_handler_class
       Object.const_get("#{name}Search")
     end
+  end
+
+  def self.included(host_class)
+    host_class.extend ClassMethods
   end
 end

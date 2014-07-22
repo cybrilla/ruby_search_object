@@ -7,7 +7,7 @@ $:.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require 'ruby_search_object'
 
 class Article
-  extend RubySearchObject::Helpers
+  include RubySearchObject
 end
 
 class ArticleSearch
