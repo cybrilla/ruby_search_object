@@ -18,7 +18,7 @@ Or install it yourself as:
 
 Then include in you class like:
     
-    Class Article < ActiveRecord::Base
+    class Article < ActiveRecord::Base
       include RubySearchObject
     end
 
@@ -37,13 +37,13 @@ Lets say each `Article` has a title, description and published date.
 
 The Article Class will be like above
 
-    Class Article < ActiveRecord::Base
+    class Article < ActiveRecord::Base
       include RubySearchObject
     end
 
 An example article search class would be like (prefarably placed in app/services or app/search_handlers folder) 
 
-    Class ArticleSearch
+    class ArticleSearch
       def initialize params = {}
         @title = params[:title]
         @start_date = params[:start_date]
