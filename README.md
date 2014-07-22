@@ -29,7 +29,7 @@ If not using in rails you might have to load the gem using
 
 ## Usage
 Lets take the classic example of a **Article** search in an rails application.
-When you include the `RubySearchObject` module adds a method called `search` to the class. Then you can pass the parameters to the search method which will then be passed to you search handler object and return the results. Every time you call the method search on the Article class a new search object is created.
+When you include the `RubySearchObject` module adds a method called `search` to the class. Then you can pass the parameters to the search method which will then be passed to you search handler object and return the results. Every time you call the method search on the Article class a new search object is created. The search method creates a new instance of class `ArticleSearch` when included in class `Article`. So it appends `Search` to the class name so your search logic should go into the class named `ArticleSearch` or what ever the class name you are using + Search.
 
 
 Example Implementaion of search.
