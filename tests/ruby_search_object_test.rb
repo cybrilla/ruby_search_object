@@ -36,7 +36,7 @@ describe RubySearchObject do
   end
 
   describe 'when asked to search' do
-    it 'triggers the search on the object' do
+    it 'triggers the search on the search handler instance' do
       params = { param: 1 }
       Article.search(params).must_equal params
     end
